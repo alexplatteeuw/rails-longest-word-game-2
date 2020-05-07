@@ -2,14 +2,14 @@
 <div id="grid">
   <% @letters.each do |letter| %>
     <div id="letter-background">
-      <p><%= letter %></p>
+      <span><%= letter %></span>
     </div>
   <% end %>
     <form action="/score" method="post">
       <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
       <input type="text" name="grid" value="<%= @letters.join %>" hidden>
       <input type="text" name="attempt" placeholder="What's your guess?">
-      <input type="submit">
+      <button type="submit">Play</button>
     </form>
 </div>
 

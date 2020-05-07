@@ -3,7 +3,7 @@ require 'open-uri'
 
 class PagesController < ApplicationController
   def new
-    @letters = Array.new(8) { ('a'..'z').to_a.sample }
+    @letters = Array.new(10) { ('a'..'z').to_a.sample }
   end
 
   def score

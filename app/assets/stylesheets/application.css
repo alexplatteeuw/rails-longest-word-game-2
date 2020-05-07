@@ -24,28 +24,32 @@ h1 {
 }
 
 #grid {
-  margin: auto;
   display: flex;
-  flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  flex-wrap: wrap;
   font-weight: bold;
+  flex-wrap: wrap;
+  padding-bottom: 5px;
 }
 
  #letter-background {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  height: 50px;
-  width: 50px;
+  height: 100px;
+  width: 100px;
   background-color: cornflowerblue;
   color: white;
   border-radius: 8px;
+  margin: 5px;
  }
 
 a {
   text-decoration: none;
   color: cornflowerblue;
   font-size: 32px;
+}
+
+ul {
+  list-style: none;
 }
